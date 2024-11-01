@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ClientLayout } from "@/components/client-layout";
-import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: "FocusAI",
@@ -19,7 +18,6 @@ export default function RootLayout({
         <ClientLayout>
           {children}
         </ClientLayout>
-        <Analytics />
       </body>
     </html>
   )
